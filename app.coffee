@@ -1,6 +1,7 @@
 express = require 'express'
 path = require 'path'
 http = require 'http'
+fs = require 'fs'
 
 app = express()
 app.configure () ->
@@ -21,7 +22,10 @@ app.configure 'development', () ->
 
 
 app.get '/', (req, res) ->
-    res.send 'Hello World!'
+    index = fs.readFileSync 'public/index.html', 'utf8'
+    res.setHeader 'Content-Type', 'text/plain'
+    res.setHeader 'Content-Length', index.length
+    res.end index
 
 
 
