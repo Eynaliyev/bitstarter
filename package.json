@@ -1,8 +1,8 @@
 {
-    "name": "selfstartr",
+    "name": "bitstartr",
     "version": "0.0.1",
     "author": "Ming-Ying Chung",
-    "description": "Selfstartr - A Node.js port of Kickstarter",
+    "description": "Bitstartr - A Node.js port of Kickstarter",
     "scripts": {
         "start": "coffee app"
     },
