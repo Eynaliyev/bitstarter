@@ -4,7 +4,7 @@
     "author": "Ming-Ying Chung",
     "description": "Bitstartr - A Node.js port of Kickstarter",
     "scripts": {
-        "start": "coffee app"
+        "start": "coffee app.coffee"
     },
     "dependencies": {
         "express": "3.1.x",
