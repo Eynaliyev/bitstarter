@@ -23,8 +23,6 @@ app.configure 'development', () ->
 
 app.get '/', (req, res) ->
     index = fs.readFileSync 'public/index.html', 'utf8'
-    res.setHeader 'Content-Type', 'text/plain'
-    res.setHeader 'Content-Length', index.length
     res.end index
 
 
